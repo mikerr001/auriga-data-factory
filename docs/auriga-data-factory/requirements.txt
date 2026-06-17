@@ -1,0 +1,18 @@
+# Auriga Data Factory — Python Dependencies
+# Python 3.9+
+
+# Core data handling
+pandas>=2.0.0
+
+# Image handling (optional — only required for file integrity pixel-level checks)
+Pillow>=10.0.0
+
+# Standard library only beyond this point for MVP:
+#   uuid, csv, json, hashlib, os, shutil, zipfile, re, math, statistics
+#   datetime, abc, dataclasses, collections, logging, random, typing
+
+# Future / research phases (do not install unless needed):
+# numpy>=1.24.0          # synthetic data distribution analysis
+# scipy>=1.10.0          # statistical tests (RD-003)
+# matplotlib>=3.7.0      # coverage visualisation
+# opencv-python>=4.8.0   # ArUco detection (for real dataset processing)

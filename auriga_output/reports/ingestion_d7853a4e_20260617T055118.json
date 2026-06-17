@@ -1,0 +1,21 @@
+{
+  "report_type": "ingestion",
+  "generated_at": "2026-06-17T05:51:18.559125+00:00",
+  "dataset_id": "d7853a4e-62e0-42d2-9baa-01d9a4590076",
+  "dataset_name": "Full Pipeline Test",
+  "version": "1.0.0",
+  "state": "candidate",
+  "sample_count": 20,
+  "real_sample_count": 20,
+  "synthetic_sample_count": 0,
+  "provenance": {
+    "adapter": "AurigaFiducialAdapter",
+    "source_file": "example_datasets/aruco_lab_experiment/metadata.csv",
+    "image_dir": null,
+    "import_timestamp": "2026-06-17T05:51:18.555690+00:00",
+    "rows_imported": 20,
+    "rows_skipped": 0,
+    "warnings": [],
+    "original_source": "example_datasets/aruco_lab_experiment"
+  }
+}

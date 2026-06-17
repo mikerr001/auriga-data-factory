@@ -1,0 +1,236 @@
+{
+  "dataset_id": "e792abb8-d2ac-427b-aebc-7549bc097c2b",
+  "dataset_name": "ArUco Lab Experiment 1",
+  "dataset_version": "1.0.0",
+  "analysed_at": "2026-06-17T05:51:16.092516+00:00",
+  "overall_score": 0.708,
+  "scores": [
+    {
+      "dimension": "distance",
+      "score": 1.0,
+      "observed_values": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "expected_values": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "missing_values": [],
+      "notes": "8/8 distance bins covered."
+    },
+    {
+      "dimension": "orientation",
+      "score": 0.833,
+      "observed_values": [
+        "Angled",
+        "Down",
+        "Left",
+        "Right",
+        "Up"
+      ],
+      "expected_values": [
+        "Down",
+        "Up",
+        "Left",
+        "Right",
+        "Angled",
+        "Flat"
+      ],
+      "missing_values": [
+        "Flat"
+      ],
+      "notes": "5/6 orientations covered."
+    },
+    {
+      "dimension": "device_diversity",
+      "score": 1.0,
+      "observed_values": [
+        "DeviceA"
+      ],
+      "expected_values": [
+        "\u22651 devices"
+      ],
+      "missing_values": [],
+      "notes": "1 device alias(es) observed (minimum: 1)."
+    },
+    {
+      "dimension": "sample_balance",
+      "score": 0.0,
+      "observed_values": [
+        "0.5m\u00d7Down=1",
+        "0.5m\u00d7Left=1",
+        "0.5m\u00d7Up=1",
+        "1.0m\u00d7Down=1",
+        "1.0m\u00d7Left=1",
+        "1.0m\u00d7Up=1",
+        "1.5m\u00d7Down=1",
+        "1.5m\u00d7Right=1",
+        "1.5m\u00d7Up=1",
+        "2.0m\u00d7Angled=1",
+        "2.0m\u00d7Down=1",
+        "2.0m\u00d7Up=1",
+        "2.5m\u00d7Down=1",
+        "2.5m\u00d7Left=1",
+        "2.5m\u00d7Right=1",
+        "3.0m\u00d7Angled=1",
+        "3.0m\u00d7Down=1",
+        "3.0m\u00d7Up=1",
+        "4.0m\u00d7Down=1",
+        "5.0m\u00d7Down=1"
+      ],
+      "expected_values": [],
+      "missing_values": [],
+      "notes": "0/48 cells have \u22653 sample(s)."
+    }
+  ],
+  "recommendations": [
+    "Collect 2 additional sample(s) at 0.5 metres using Down orientation.",
+    "Collect 2 additional sample(s) at 0.5 metres using Up orientation.",
+    "Collect 2 additional sample(s) at 0.5 metres using Left orientation.",
+    "Collect 3 additional sample(s) at 0.5 metres using Right orientation.",
+    "Collect 3 additional sample(s) at 0.5 metres using Angled orientation.",
+    "Collect 3 additional sample(s) at 0.5 metres using Flat orientation.",
+    "Collect 2 additional sample(s) at 1.0 metres using Down orientation.",
+    "Collect 2 additional sample(s) at 1.0 metres using Up orientation.",
+    "Collect 2 additional sample(s) at 1.0 metres using Left orientation.",
+    "Collect 3 additional sample(s) at 1.0 metres using Right orientation.",
+    "Collect 3 additional sample(s) at 1.0 metres using Angled orientation.",
+    "Collect 3 additional sample(s) at 1.0 metres using Flat orientation.",
+    "Collect 2 additional sample(s) at 1.5 metres using Down orientation.",
+    "Collect 2 additional sample(s) at 1.5 metres using Up orientation.",
+    "Collect 3 additional sample(s) at 1.5 metres using Left orientation.",
+    "Collect 2 additional sample(s) at 1.5 metres using Right orientation.",
+    "Collect 3 additional sample(s) at 1.5 metres using Angled orientation.",
+    "Collect 3 additional sample(s) at 1.5 metres using Flat orientation.",
+    "Collect 2 additional sample(s) at 2.0 metres using Down orientation.",
+    "Collect 2 additional sample(s) at 2.0 metres using Up orientation.",
+    "Collect 3 additional sample(s) at 2.0 metres using Left orientation.",
+    "Collect 3 additional sample(s) at 2.0 metres using Right orientation.",
+    "Collect 2 additional sample(s) at 2.0 metres using Angled orientation.",
+    "Collect 3 additional sample(s) at 2.0 metres using Flat orientation.",
+    "Collect 2 additional sample(s) at 2.5 metres using Down orientation.",
+    "Collect 3 additional sample(s) at 2.5 metres using Up orientation.",
+    "Collect 2 additional sample(s) at 2.5 metres using Left orientation.",
+    "Collect 2 additional sample(s) at 2.5 metres using Right orientation.",
+    "Collect 3 additional sample(s) at 2.5 metres using Angled orientation.",
+    "Collect 3 additional sample(s) at 2.5 metres using Flat orientation.",
+    "Collect 2 additional sample(s) at 3.0 metres using Down orientation.",
+    "Collect 2 additional sample(s) at 3.0 metres using Up orientation.",
+    "Collect 3 additional sample(s) at 3.0 metres using Left orientation.",
+    "Collect 3 additional sample(s) at 3.0 metres using Right orientation.",
+    "Collect 2 additional sample(s) at 3.0 metres using Angled orientation.",
+    "Collect 3 additional sample(s) at 3.0 metres using Flat orientation.",
+    "Collect 2 additional sample(s) at 4.0 metres using Down orientation.",
+    "Collect 3 additional sample(s) at 4.0 metres using Up orientation.",
+    "Collect 3 additional sample(s) at 4.0 metres using Left orientation.",
+    "Collect 3 additional sample(s) at 4.0 metres using Right orientation.",
+    "Collect 3 additional sample(s) at 4.0 metres using Angled orientation.",
+    "Collect 3 additional sample(s) at 4.0 metres using Flat orientation.",
+    "Collect 2 additional sample(s) at 5.0 metres using Down orientation.",
+    "Collect 3 additional sample(s) at 5.0 metres using Up orientation.",
+    "Collect 3 additional sample(s) at 5.0 metres using Left orientation.",
+    "Collect 3 additional sample(s) at 5.0 metres using Right orientation.",
+    "Collect 3 additional sample(s) at 5.0 metres using Angled orientation.",
+    "Collect 3 additional sample(s) at 5.0 metres using Flat orientation."
+  ],
+  "heatmap_data": {
+    "distance_x_orientation": {
+      "x_labels": [
+        "0.5",
+        "1.0",
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0",
+        "4.0",
+        "5.0"
+      ],
+      "y_labels": [
+        "Down",
+        "Up",
+        "Left",
+        "Right",
+        "Angled",
+        "Flat"
+      ],
+      "matrix": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "x_axis": "Distance (m)",
+      "y_axis": "Orientation",
+      "description": "Sample count per (distance \u00d7 orientation) cell."
+    }
+  }
+}

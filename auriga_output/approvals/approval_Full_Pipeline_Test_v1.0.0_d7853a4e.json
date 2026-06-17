@@ -1,0 +1,11 @@
+{
+  "dataset_id": "d7853a4e-62e0-42d2-9baa-01d9a4590076",
+  "dataset_name": "Full Pipeline Test",
+  "version": "1.0.0",
+  "state": "approved",
+  "approved_by": "Prof. Jones",
+  "approved_at": "2026-06-17T05:51:18.562610+00:00",
+  "checksum": "6f3f67d6a924a5dc088335049b970f9e697ec3753cafbbfe5052172fa3ea9923",
+  "approval_notes": "E2E pipeline validation",
+  "sample_count": 20
+}

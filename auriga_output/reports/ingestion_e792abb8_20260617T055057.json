@@ -1,0 +1,21 @@
+{
+  "report_type": "ingestion",
+  "generated_at": "2026-06-17T05:50:57.452863+00:00",
+  "dataset_id": "e792abb8-d2ac-427b-aebc-7549bc097c2b",
+  "dataset_name": "ArUco Lab Experiment 1",
+  "version": "1.0.0",
+  "state": "candidate",
+  "sample_count": 20,
+  "real_sample_count": 20,
+  "synthetic_sample_count": 0,
+  "provenance": {
+    "adapter": "AurigaFiducialAdapter",
+    "source_file": "example_datasets/aruco_lab_experiment/metadata.csv",
+    "image_dir": null,
+    "import_timestamp": "2026-06-17T05:50:57.449309+00:00",
+    "rows_imported": 20,
+    "rows_skipped": 0,
+    "warnings": [],
+    "original_source": "example_datasets/aruco_lab_experiment"
+  }
+}

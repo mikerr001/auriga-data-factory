@@ -1,0 +1,23 @@
+============================================================
+VALIDATION REPORT — ArUco Lab Experiment 1 v1.0.0
+Dataset ID : e792abb8-d2ac-427b-aebc-7549bc097c2b
+Validated  : 2026-06-17T05:51:06.235428+00:00
+Overall    : WARNING
+Results    : 5 PASS / 2 WARN / 0 FAIL
+============================================================
+  ✓ [PASS   ] schema_validation
+          All 20 samples pass schema validation.
+  ✓ [PASS   ] missing_image_detection
+          Image existence check skipped (disabled).
+  ✓ [PASS   ] duplicate_detection
+          No duplicate sample IDs or measurement hashes found.
+  ✓ [PASS   ] impossible_measurement_detection
+          No impossible measurement values detected.
+  ⚠ [WARNING] outlier_identification
+          3 sample(s) contain outlier values (IQR×1.5). Review recommended.
+          Affected: ['S-001', 'S-002', 'S-003']
+  ⚠ [WARNING] coverage_completeness
+          2 coverage gap(s) detected.
+  ✓ [PASS   ] referential_integrity
+          Source type and synthetic labelling integrity checks passed.
+============================================================

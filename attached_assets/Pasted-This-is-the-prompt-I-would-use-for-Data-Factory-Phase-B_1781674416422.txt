@@ -1,0 +1,323 @@
+This is the prompt I would use for Data Factory Phase B (Implementation). It assumes that the constitutional documents already exist and that the generated repository architecture from Phase A has been approved.
+
+Give this to Replit Agent inside the Data Factory repository.
+
+I want you to act as a Principal Software Engineer, Data Engineer, MLOps Architect, and Research Infrastructure Specialist. You are working within Project Auriga, an offline-first assistive navigation ecosystem whose philosophy prioritizes scientific rigor, privacy, explainability, reproducibility, and observability.
+
+The repository architecture and constitutional documents already exist. Your task is NOT to redesign the architecture. Your task is to IMPLEMENT the Data Factory according to the specifications already present in this repository.
+
+MISSION
+
+Transform the Auriga Data Factory from an architectural blueprint into a working research infrastructure platform capable of ingesting, validating, analysing, versioning, and approving datasets for downstream Auriga systems.
+
+The implementation must remain faithful to the repository's existing constitutional rules and documentation.
+
+PRIMARY OBJECTIVES
+
+Implement the following systems in order of priority:
+
+1. Dataset Ingestion Engine
+
+Build a robust ingestion system capable of importing heterogeneous datasets and converting them into the Auriga canonical dataset representation.
+
+The ingestion engine must support:
+
+CSV metadata + image directories;
+Existing Auriga fiducial datasets;
+Legacy experimental datasets;
+Future extensibility through adapter interfaces.
+
+Required outputs:
+
+Canonical dataset objects;
+Ingestion reports;
+Import logs.
+
+The system must preserve provenance information.
+
+2. Canonical Dataset Schema
+
+Implement a versioned canonical schema.
+
+Required fields include:
+
+datasetVersion;
+sampleID;
+filename;
+imagePath;
+fiducialType;
+objectName;
+distanceMeters;
+orientation;
+cameraHeightCm;
+deviceModel;
+deviceAlias;
+markerWidthPx;
+markerHeightPx;
+markerAreaPx;
+centerX;
+centerY;
+detectionSuccess;
+captureTimestamp;
+sourceType;
+notes.
+
+The schema must support future expansion without breaking backward compatibility.
+
+3. Automated Validation Engine
+
+Implement a validation pipeline.
+
+Validation must include:
+
+Schema validation;
+
+Missing image detection;
+
+Duplicate sample detection;
+
+Impossible measurement detection;
+
+Outlier identification;
+
+Coverage completeness checks;
+
+Referential integrity checks.
+
+Validation results shall be categorised as:
+
+PASS;
+
+WARNING;
+
+FAIL.
+
+Generate machine-readable and human-readable reports.
+
+4. Coverage Analysis Engine
+
+Implement an analyser that determines dataset completeness.
+
+Coverage analysis should evaluate:
+
+Distance coverage;
+
+Orientation coverage;
+
+Device coverage;
+
+Environmental diversity;
+
+Sample distribution balance.
+
+Outputs should include:
+
+Coverage heatmaps;
+
+Collection recommendations;
+
+Coverage scores.
+
+Example recommendation:
+
+"Collect 12 additional samples at 2.5 metres using Down orientation."
+
+5. Synthetic Geometry Generator
+
+Implement mathematically derived synthetic generation.
+
+DO NOT use GANs or diffusion models.
+
+Use explainable geometric relationships derived from camera models.
+
+Generate synthetic records representing:
+
+Perspective scaling;
+
+Virtual fiducial behaviour;
+
+Bearing changes;
+
+Camera height variations;
+
+Controlled uncertainty ranges.
+
+Synthetic samples must be labelled clearly as synthetic.
+
+6. Dataset Approval Workflow
+
+Implement promotion pipelines.
+
+Datasets shall progress through the following states:
+
+candidate;
+
+validated;
+
+human_reviewed;
+
+approved;
+
+archived.
+
+Approval rules:
+
+Automated validation MUST pass.
+
+Human sign-off MUST occur.
+
+Approved datasets MUST become immutable.
+
+Any modification shall produce a new version.
+
+7. Observability
+
+Integrate comprehensive logging.
+
+Log:
+
+ingestion events;
+
+validation events;
+
+promotion events;
+
+errors;
+
+warnings;
+
+research debt discoveries.
+
+Research debt shall receive identifiers.
+
+Example:
+
+RD-DATA-001.
+
+EXISTING DATASET SUPPORT
+
+Assume that the repository will initially receive datasets similar to Auriga's existing fiducial experiments, consisting of:
+
+metadata CSV files;
+corresponding image folders;
+ArUco-derived measurements.
+
+Ensure these datasets can be imported successfully.
+
+IMPLEMENTATION REQUIREMENTS
+
+Use Python.
+
+Prioritise readability and maintainability.
+
+Prefer modular design.
+
+Implement extensive docstrings.
+
+Generate unit tests.
+
+Use type hints.
+
+Provide CLI interfaces where appropriate.
+
+Avoid unnecessary dependencies.
+
+Design for offline execution.
+
+PROJECT STRUCTURE
+
+If not already present, implement modules resembling:
+
+auriga_data_factory/
+├── ingestion/
+├── schema/
+├── validation/
+├── coverage/
+├── synthetic/
+├── approval/
+├── observability/
+├── reports/
+├── cli/
+├── tests/
+└── docs/
+
+Do not remove existing architectural documents.
+
+SELF-VALIDATION REQUIREMENTS
+
+After implementation:
+
+Generate a validation matrix demonstrating that each requirement has been addressed.
+
+Attempt adversarial testing.
+
+Identify potential failure modes.
+
+Create a Research Debt register documenting unresolved concerns.
+
+Examples:
+
+RD-DATA-001: Synthetic uncertainty modelling assumptions.
+RD-DATA-002: Coverage thresholds require empirical tuning.
+HUMAN VALIDATION REQUIREMENTS
+
+Generate a checklist enabling the project lead to verify the system manually.
+
+Examples:
+
+Can a CSV dataset be imported?
+
+Can corrupted datasets be rejected?
+
+Can a candidate dataset be promoted correctly?
+
+Can approved datasets resist modification?
+
+OUTPUTS REQUIRED
+
+Produce:
+
+Working implementation code;
+
+Unit tests;
+
+Example datasets;
+
+CLI usage documentation;
+
+Architecture compliance report;
+
+Research debt register;
+
+Validation report;
+
+Human validation checklist.
+
+CONSTITUTIONAL CONSTRAINTS
+
+Never store unique hardware identifiers.
+
+Never transmit datasets to cloud services by default.
+
+Never modify approved datasets.
+
+Never bypass human approval.
+
+Never hide validation failures.
+
+Always preserve provenance.
+
+Always distinguish between real and synthetic data.
+
+Always document uncertainty.
+
+Your goal is to deliver an implementation that transforms the Auriga Data Factory into a scientifically rigorous, offline-capable research platform that downstream Auriga repositories can trust as their source of truth.
+
+Before declaring completion:
+
+Perform self-validation.
+Attempt to identify weaknesses in your own implementation.
+Document research debt explicitly.
+Produce clear instructions for the project lead describing how to test the system using the existing Auriga fiducial datasets.
+
+Once this is done, stop. Do not proceed into Phase 2 repositories. The objective of this task is solely to complete the implementation of the Auriga Data Factory.

@@ -1,0 +1,42 @@
+[
+  {
+    "debt_id": "RD-DATA-001",
+    "title": "Synthetic uncertainty modelling assumptions",
+    "description": "The synthetic geometry generator uses simplified perspective projection formulae. Real-world lens distortion, sensor noise, and environmental occlusion are not modelled. Synthetic samples may not faithfully represent edge cases encountered in production.",
+    "severity": "medium",
+    "subsystem": "synthetic",
+    "discovered_at": "2026-06-17T05:51:09.749946+00:00",
+    "resolved": false,
+    "resolution_notes": null
+  },
+  {
+    "debt_id": "RD-DATA-002",
+    "title": "Coverage thresholds require empirical tuning",
+    "description": "Current coverage completeness thresholds (distance bins, orientation bins, minimum samples-per-cell) are heuristic. They should be validated against downstream model performance data before being treated as ground truth.",
+    "severity": "medium",
+    "subsystem": "coverage",
+    "discovered_at": "2026-06-17T05:51:09.749967+00:00",
+    "resolved": false,
+    "resolution_notes": null
+  },
+  {
+    "debt_id": "RD-DATA-003",
+    "title": "Outlier detection sensitivity unvalidated",
+    "description": "The IQR-based outlier detection in the validation engine uses a fixed multiplier of 1.5. This may be too aggressive for small datasets or too permissive for large ones. Requires domain-expert calibration per fiducial type.",
+    "severity": "low",
+    "subsystem": "validation",
+    "discovered_at": "2026-06-17T05:51:09.749970+00:00",
+    "resolved": false,
+    "resolution_notes": null
+  },
+  {
+    "debt_id": "RD-DATA-004",
+    "title": "Human approval workflow is file-based",
+    "description": "The current human approval mechanism writes a JSON approval record to disk. This is sufficient for research use but does not provide cryptographic non-repudiation of reviewer identity. A signed-approval mechanism should be considered for production.",
+    "severity": "low",
+    "subsystem": "approval",
+    "discovered_at": "2026-06-17T05:51:09.749972+00:00",
+    "resolved": false,
+    "resolution_notes": null
+  }
+]

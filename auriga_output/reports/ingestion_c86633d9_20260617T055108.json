@@ -1,0 +1,15 @@
+{
+  "report_type": "ingestion",
+  "generated_at": "2026-06-17T05:51:08.789666+00:00",
+  "dataset_id": "c86633d9-0a71-4856-bde3-960bab98fe50",
+  "dataset_name": "Synthetic Perspective Set 1",
+  "version": "1.0.0",
+  "state": "candidate",
+  "sample_count": 90,
+  "real_sample_count": 0,
+  "synthetic_sample_count": 90,
+  "provenance": {
+    "generator": "SyntheticGenerator",
+    "model": "perspective_scaling"
+  }
+}

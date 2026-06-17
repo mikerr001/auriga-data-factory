@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.5",
+  "experiment_name": "Legacy ArUco Distance Series",
+  "capture_date": "2025-03-15",
+  "notes": "Early prototype experiment. Imported via LegacyExperimentAdapter.",
+  "samples": [
+    {
+      "id": "L-001", "filename": "legacy_001.jpg", "path": "",
+      "distance": 0.5, "orientation": "Down", "height_cm": 100.0,
+      "device": "OldPhone/0.9", "alias": "DeviceB",
+      "width_px": 285.0, "height_px": 284.0, "area_px": 80940.0,
+      "cx": 962.0, "cy": 541.0, "detected": true,
+      "timestamp": "2025-03-15T09:00:00+00:00"
+    },
+    {
+      "id": "L-002", "filename": "legacy_002.jpg", "path": "",
+      "distance": 1.0, "orientation": "Down", "height_cm": 100.0,
+      "device": "OldPhone/0.9", "alias": "DeviceB",
+      "width_px": 143.0, "height_px": 142.0, "area_px": 20306.0,
+      "cx": 958.0, "cy": 539.0, "detected": true,
+      "timestamp": "2025-03-15T09:05:00+00:00"
+    },
+    {
+      "id": "L-003", "filename": "legacy_003.jpg", "path": "",
+      "distance": 1.5, "orientation": "Down", "height_cm": 100.0,
+      "device": "OldPhone/0.9", "alias": "DeviceB",
+      "width_px": 95.0, "height_px": 95.0, "area_px": 9025.0,
+      "cx": 961.0, "cy": 542.0, "detected": true,
+      "timestamp": "2025-03-15T09:10:00+00:00"
+    },
+    {
+      "id": "L-004", "filename": "legacy_004.jpg", "path": "",
+      "distance": 2.0, "orientation": "Up", "height_cm": 100.0,
+      "device": "OldPhone/0.9", "alias": "DeviceB",
+      "width_px": 71.0, "height_px": 71.0, "area_px": 5041.0,
+      "cx": 964.0, "cy": 538.0, "detected": true,
+      "timestamp": "2025-03-15T09:15:00+00:00"
+    },
+    {
+      "id": "L-005", "filename": "legacy_005.jpg", "path": "",
+      "distance": 2.5, "orientation": "Left", "height_cm": 100.0,
+      "device": "OldPhone/0.9", "alias": "DeviceB",
+      "width_px": 57.0, "height_px": 57.0, "area_px": 3249.0,
+      "cx": 960.0, "cy": 540.0, "detected": true,
+      "timestamp": "2025-03-15T09:20:00+00:00"
+    }
+  ]
+}

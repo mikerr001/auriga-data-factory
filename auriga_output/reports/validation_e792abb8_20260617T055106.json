@@ -1,0 +1,78 @@
+{
+  "dataset_id": "e792abb8-d2ac-427b-aebc-7549bc097c2b",
+  "dataset_name": "ArUco Lab Experiment 1",
+  "dataset_version": "1.0.0",
+  "validated_at": "2026-06-17T05:51:06.235428+00:00",
+  "overall_status": "WARNING",
+  "pass_count": 5,
+  "warning_count": 2,
+  "fail_count": 0,
+  "results": [
+    {
+      "check_name": "schema_validation",
+      "status": "PASS",
+      "message": "All 20 samples pass schema validation.",
+      "details": null,
+      "affected_samples": []
+    },
+    {
+      "check_name": "missing_image_detection",
+      "status": "PASS",
+      "message": "Image existence check skipped (disabled).",
+      "details": null,
+      "affected_samples": []
+    },
+    {
+      "check_name": "duplicate_detection",
+      "status": "PASS",
+      "message": "No duplicate sample IDs or measurement hashes found.",
+      "details": null,
+      "affected_samples": []
+    },
+    {
+      "check_name": "impossible_measurement_detection",
+      "status": "PASS",
+      "message": "No impossible measurement values detected.",
+      "details": null,
+      "affected_samples": []
+    },
+    {
+      "check_name": "outlier_identification",
+      "status": "WARNING",
+      "message": "3 sample(s) contain outlier values (IQR\u00d71.5). Review recommended.",
+      "details": [
+        "Sample S-001: marker_width_px=285.20 (outside [-88.32, 280.88])",
+        "Sample S-002: marker_width_px=284.00 (outside [-88.32, 280.88])",
+        "Sample S-003: marker_width_px=286.10 (outside [-88.32, 280.88])",
+        "Sample S-001: marker_height_px=284.80 (outside [-88.53, 280.68])",
+        "Sample S-002: marker_height_px=283.50 (outside [-88.53, 280.68])",
+        "Sample S-003: marker_height_px=285.90 (outside [-88.53, 280.68])",
+        "Sample S-001: marker_area_px=81225.00 (outside [-24088.88, 46862.12])",
+        "Sample S-002: marker_area_px=80484.00 (outside [-24088.88, 46862.12])",
+        "Sample S-003: marker_area_px=81813.00 (outside [-24088.88, 46862.12])"
+      ],
+      "affected_samples": [
+        "S-001",
+        "S-002",
+        "S-003"
+      ]
+    },
+    {
+      "check_name": "coverage_completeness",
+      "status": "WARNING",
+      "message": "2 coverage gap(s) detected.",
+      "details": [
+        "Orientation 'Right' has only 2 sample(s) (minimum: 3).",
+        "Orientation 'Angled' has only 2 sample(s) (minimum: 3)."
+      ],
+      "affected_samples": []
+    },
+    {
+      "check_name": "referential_integrity",
+      "status": "PASS",
+      "message": "Source type and synthetic labelling integrity checks passed.",
+      "details": null,
+      "affected_samples": []
+    }
+  ]
+}
